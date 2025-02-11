@@ -1,0 +1,59 @@
+body.dark {
+  background-color: #ccc;
+  nav {
+    background-color: $dark-theme-main;
+    .link {
+      color: #fff;
+    }
+    .link.active {
+      color: $main;
+    }
+  }
+  .logo {
+    span {
+      &:nth-child(1) {
+        color: #fff;
+      }
+    }
+  }
+  .cardHome {
+    background: rgba(42, 42, 42, 0.9);
+    h1 {
+      color: #fff;
+    }
+    .btn {
+      background-color: $main;
+      &:hover {
+        border-color: #fff;
+        background-color: #fff;
+        color: $main;
+      }
+    }
+  }
+  footer {
+    background-color: $dark-theme-main;
+    .linkGroup {
+      h2 {
+        color: #fff;
+      }
+      ul {
+        li {
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 901px) {
+    .ls {
+      background-color: $dark-theme-main;
+      &::-webkit-scrollbar {
+        width: 0px;
+      }
+    }
+  }
+  .copyInner{
+    color: #fff;
+  }
+}
