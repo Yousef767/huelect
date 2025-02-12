@@ -1988,7 +1988,7 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 }
 .timer span {
   font-weight: 600;
