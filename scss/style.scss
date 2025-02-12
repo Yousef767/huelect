@@ -37,6 +37,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   background-color: $gray;
+  direction: rtl;
   &::-webkit-scrollbar {
     width: 5px;
   }
@@ -226,6 +227,23 @@ nav {
 .mainLinks {
   display: flex;
   list-style: none;
+  li {
+    button,
+    .a {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      padding: 0 17px;
+      height: 80px;
+      gap: 5px;
+      transition: 0.2s;
+      color: $main;
+      font-size: 1.1em;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+  }
 }
 
 .link {
@@ -511,6 +529,8 @@ main {
   display: flex;
   justify-content: center;
   padding-top: 70px;
+  min-height: 70vh;
+  align-items: center;
 }
 .section {
   display: flex;
@@ -776,11 +796,23 @@ header {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  position: relative;
+  i {
+    position: absolute;
+    left: 15px;
+    bottom: 13px;
+    color: $main;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
   span {
-    font-weight: 700;
+    width: 100%;
+    font-weight: 500;
+    text-align: right;
+    padding-bottom: 7px;
   }
   input,
+  select,
   textarea {
     width: 100%;
     height: 45px;
@@ -789,9 +821,13 @@ header {
     border: 1px solid $main;
     padding-right: 15px;
     font-size: 1em;
-    background-color: $dark-gray;
+    background-color: #fff;
+    text-align: right;
+    color: $main;
+    font-weight: 500;
     &::placeholder {
-      color: rgba(0, 125, 194, 0.5);
+      color: $main;
+      font-weight: 400;
     }
   }
   textarea {
@@ -1552,7 +1588,7 @@ footer {
   width: 600px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: center;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 0px 9.8px rgba(0, 0, 0, 0.25);
@@ -1562,9 +1598,8 @@ footer {
   gap: 10px;
   text-align: right;
   transform: translateY(120px);
-  @media (max-width:700px) {
+  @media (max-width: 700px) {
     width: 100%;
-    
   }
   p {
     font-size: 1.2rem;
@@ -1572,9 +1607,8 @@ footer {
     width: 300px;
     text-align: right;
     padding-bottom: 10px;
-    @media (max-width:700px) {
+    @media (max-width: 700px) {
       width: 100%;
-      
     }
   }
 }
@@ -1614,12 +1648,15 @@ footer {
   align-items: center;
   font-size: 16px;
   transition: transform 0.3s, background 0.3s;
+  i {
+    color: $main;
+  }
 }
 
 /* Move circle in Dark Mode */
 .dark .toggle-circle {
   transform: translateX(45px);
-  background: #444;
+  background: $main;
   i {
     color: #fff;
   }
@@ -1635,4 +1672,237 @@ footer {
     padding: 0 5px;
     display: inline-flex;
   }
+}
+.homeCard {
+  width: 100%;
+  @include flex();
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 100px !important;
+  h1 {
+    padding-bottom: 50px;
+    font-size: 2.2rem;
+  }
+}
+.cards {
+  width: 100%;
+  @include flex();
+  row-gap: 60px;
+  column-gap: 30px;
+  flex-wrap: wrap;
+}
+.card {
+  @include flex();
+  position: relative;
+  flex-direction: column;
+  width: 300px;
+  padding: 50px 20px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.37);
+  border: 2px solid #272727;
+  text-align: center;
+  gap: 10px;
+  @media (max-width: 350px) {
+    width: 100%;
+  }
+  p {
+    color: $main;
+  }
+  .icon {
+    @include circle(75px);
+    @include flex();
+    background-color: $main;
+    position: absolute;
+    top: -37.5px;
+    svg {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+.center {
+  @include flex();
+  flex-direction: column;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+.formCard {
+  width: 800px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 60px;
+  @media (max-width: 850px) {
+    width: 100%;
+  }
+  @media (max-width: 600px) {
+    padding: 40px 20px;
+  }
+}
+.min100vh {
+  min-height: 100vh;
+}
+.loginas {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+  button,
+  a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    @include flex();
+    color: $main;
+    border: 1px solid $main;
+    border-radius: 20px;
+    height: 35px;
+    padding: 0 15px;
+    transition: 0.3s all ease;
+  }
+  .active {
+    background-color: $main;
+    color: #fff;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  gap: 30px;
+  padding: 100px 20px 70px 20px;
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+}
+.timers {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.timer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  span {
+    font-weight: 600;
+    span {
+      color: $main;
+    }
+  }
+}
+.alert {
+  width: 100%;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 20px;
+  h1 {
+    display: flex;
+    align-items: center;
+    color: $main;
+    gap: 10px;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  p {
+    padding-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+.cardscont {
+  @include flex();
+  width: 100%;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.c {
+  @include flex();
+  padding: 60px 40px;
+  width: 350px;
+  flex-grow: 1;
+  background-color: #fff;
+  border-radius: 20px;
+  flex-direction: column;
+  svg,
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  h3 {
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+  }
+}
+.btn2 {
+  background-color: $main;
+  color: #fff;
+  &:hover {
+    background-color: #fff;
+    color: $main;
+  }
+}
+.btn3 {
+  cursor: pointer;
+  white-space: nowrap;
+  &:hover {
+    background-color: $main;
+    color: #fff;
+  }
+  input {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+@media (max-width: 500px) {
+  .alert {
+    padding: 30px 20px;
+  }
+  .timer {
+    width: 100%;
+    span {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .c {
+    width: 100%;
+    padding: 30px 20px;
+  }
+}
+
+.c2{
+  width: 270px;
+  padding: 30px;
+  flex-grow: 0;
+  img{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    border: 1px solid $main;
+    object-fit: cover;
+  }
+  h3{
+    padding-top: 20px;
+  }
+}
+.submitBtn{
+  width: fit-content;
+  height: 45px;
+  margin: 0 auto;
+  font-size: 1rem;
+  margin-top: 30px;
 }

@@ -1,5 +1,5 @@
 body.dark {
-  background-color: #ccc;
+  background-color: #353535;
   nav {
     background-color: $dark-theme-main;
     .link {
@@ -17,7 +17,7 @@ body.dark {
     }
   }
   .cardHome {
-    background: rgba(42, 42, 42, 0.9);
+    background: $dark-card;
     h1 {
       color: #fff;
     }
@@ -53,7 +53,66 @@ body.dark {
       }
     }
   }
-  .copyInner{
+  .copyInner {
     color: #fff;
+  }
+  .homeCard {
+    h1 {
+      color: #fff;
+    }
+    .card {
+      background-color: $dark-card;
+      h2 {
+        color: #fff;
+      }
+    }
+  }
+  .formCard {
+    background-color: $dark-card;
+    h2 {
+      color: #fff;
+    }
+  }
+  .input {
+    span {
+      color: $main;
+    }
+    input,
+    select,
+    textarea {
+      background-color: #373737;
+      color: #fff;
+      &::placeholder {
+        color: #fff;
+      }
+    }
+  }
+  .btn {
+    background-color: $main;
+    color: #fff;
+    &:hover {
+      background-color: #fff;
+      color: $main;
+    }
+  }
+  .timer{
+    span{
+      color: #fff;
+      span{
+        color: $main;
+      }
+    }
+  }
+  .c{
+    background-color: $dark-card;
+    h3{
+      color: #fff;
+    }
+  }
+  .btn3 {
+    &:hover {
+      background-color: $main;
+      color: #fff;
+    }
   }
 }
