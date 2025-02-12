@@ -105,6 +105,12 @@ body.dark .btn3:hover {
   background-color: #e70101;
   color: #fff;
 }
+body.dark .alert {
+  background-color: rgba(42, 42, 42, 0.9);
+}
+body.dark .alert p {
+  color: #fff;
+}
 
 * {
   margin: 0;
