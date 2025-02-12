@@ -1551,7 +1551,7 @@ footer {
 }
 @media (max-width: 421px) {
   .footerLogo img {
-    width: 200px;
+    width: 100px;
   }
   .footerLogo .aboutText {
     width: 100%;
@@ -2010,6 +2010,10 @@ footer {
   flex-direction: column;
   background-color: #fff;
   border-radius: 20px;
+}
+.alert i {
+  font-size: 2rem;
+  color: #e70101;
 }
 .alert h1 {
   display: flex;
