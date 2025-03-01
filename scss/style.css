@@ -1221,13 +1221,6 @@ header {
     height: 350px;
   }
 }
-.w100 {
-  width: 100% !important;
-}
-.w100 p {
-  padding-bottom: 20px;
-}
-
 .whoInner {
   display: flex;
   justify-content: center;
@@ -1955,6 +1948,7 @@ footer {
 }
 @media (max-width: 600px) {
   .formCard {
+    width: 100%;
     padding: 40px 20px;
   }
 }
@@ -2276,4 +2270,20 @@ footer {
 
 .approved {
   color: #008223;
+}
+
+.w100 {
+  width: 100% !important;
+}
+.w100 p {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+  main {
+    width: 100%;
+  }
+  .center {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

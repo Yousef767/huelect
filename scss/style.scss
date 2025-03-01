@@ -1060,12 +1060,7 @@ header {
     height: 350px;
   }
 }
-.w100 {
-  width: 100% !important;
-  p {
-    padding-bottom: 20px;
-  }
-}
+
 .whoInner {
   @include flex();
   padding: 50px 0 30px 0;
@@ -1741,6 +1736,7 @@ footer {
     width: 100%;
   }
   @media (max-width: 600px) {
+    width: 100%;
     padding: 40px 20px;
   }
 }
@@ -2026,12 +2022,26 @@ footer {
 .mra {
   margin-right: auto;
 }
-.pending{
+.pending {
   color: #272727;
 }
-.rejected{
-color: #820000;
+.rejected {
+  color: #820000;
 }
-.approved{
+.approved {
   color: #008223;
+}
+.w100 {
+  width: 100% !important;
+  p {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  main {
+    width: 100%;
+  }
+  .center {
+    width: 100%;
+  }
 }
