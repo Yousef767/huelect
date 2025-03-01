@@ -111,6 +111,22 @@ body.dark .alert {
 body.dark .alert p {
   color: #fff;
 }
+body.dark .tg tbody td {
+  background-color: rgba(42, 42, 42, 0.9);
+  color: #fff;
+}
+body.dark .tg .tools .a {
+  color: #fff;
+}
+body.dark .tg .tools .a i {
+  color: #fff;
+}
+body.dark .tg .tools i {
+  color: #fff;
+}
+body.dark .pending {
+  color: #ccc;
+}
 
 * {
   margin: 0;

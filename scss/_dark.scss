@@ -121,4 +121,26 @@ body.dark {
       color: #fff;
     }
   }
+  .tg{
+    tbody{
+      td{
+        background-color: $dark-card;
+        color: #fff;
+      }
+    }
+    .tools{
+      .a{
+        color: #fff;
+        i{
+          color: #fff;
+        }
+      }
+      i{
+        color: #fff;
+      }
+    }
+  }
+  .pending{
+    color: #ccc;
+  }
 }
