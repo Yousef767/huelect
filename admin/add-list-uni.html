@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../media/icons/tap.svg" type="image/x-icon" />
+  <link rel="shortcut icon" href="../media/icons/tap.svg" />
+  <link rel="apple-touch-icon" href="../media/icons/tap.svg" />
+  <meta name="color-scheme" content="light only">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+  <link rel="stylesheet" href="../scss/style.css">
+  <title> HUelect </title>
+</head>
+
+<body>
+  <!-- Start Nav -->
+  <nav>
+    <div class="box f-s">
+      <a href="./home.html" class="logo">
+        <img src="../media/logo.png" alt="">
+        <div class="logoT">
+          <span>بوابة الانتخابات الالكترونية</span>
+          <span>HUelect</span>
+        </div>
+      </a>
+      <div class="links">
+        <div class="ls">
+          <ul class="mainLinks">
+            <li><a class="link" href="./home.html"> الرئيسية</a></li>
+            <li><a class="link" href="https://hu.edu.jo" target="_blank"> موقع الجامعة </a></li>
+            <li><a class="link" href="https://reg1.hu.edu.jo" target="_blank"> بوابة الطالب</a></li>
+            <li><a class="link" href="./login.html"> تسجيل الدخول</a></li>
+            <li style="display: flex;align-items: center;">
+              <div class="toggle-container" id="themeToggle">
+                <div class="toggle-circle">
+                  <i class="fas fa-moon"></i>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="last">
+        <button class="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- End Nav -->
+
+  <!--Start Sections -->
+  <main>
+    <section class="center">
+      <div class="container">
+        <div class="timers">
+          <div class="timer">
+            <span>
+              اضافة قائمة جديدة (جامعة)
+            </span>
+            <span style="display: flex;flex-grow: 1;justify-content: left;">
+              التاريخ :
+              <span>20/2/2025</span>
+            </span>
+            <span>
+              الوقت :
+              <span>10:35 PM </span>
+            </span>
+          </div>
+        </div>
+        <div class="formCard w100">
+          <div class="loginas">
+            <a href="add-list-uni.html" class="active">
+              معلومات القائمة
+            </a>
+            <a href="add-edit-candidates-uni.html">
+              مرشحين القائمة
+            </a>
+          </div>
+          <form class="form">
+            <div class="input">
+              <span>اسم القائمة :</span>
+              <input type="text" placeholder="اسم القائمة  ">
+            </div>
+            <div class="input">
+              <span>حالة القائمة :</span>
+              <select name="" id="">
+                <option value="0">حالة القائمة</option>
+              </select>
+              <i class="fa-light fa-angle-down"></i>
+            </div>
+            <div class="input">
+              <span> ملاحظات عامة :</span>
+              <textarea name="" id="" placeholder="ملاحظات عامة "></textarea>
+            </div>
+            <button type="submit" class="btn"> حفظ المعلومات</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--End Sections -->
+
+
+  <!-- start footer -->
+  <footer>
+    <div class="box footer">
+      <div class="footerLogo">
+        <img src="../media/logo.png" alt="">
+      </div>
+      <div class="footerLinkGroup">
+        <div class="linkGroup">
+          <h2> بوابة الانتخابات الالكترونية </h2>
+          <ul>
+            <li><a href="./login.html"> <img src="../media/icons/footerLink.svg" alt=""> تسجيل الدخول</a></li>
+            <li><a href="./home.html"><img src="../media/icons/footerLink.svg" alt=""> عن النظام </a></li>
+          </ul>
+        </div>
+        <div class="linkGroup">
+          <h2> مواقع مفيدة</h2>
+          <ul>
+            <li><a href="https://hu.edu.jo" target="_blank"> <img src="../media/icons/footerLink.svg" alt=""> موقع
+                الجامعة </a>
+            </li>
+            <li><a href="https://reg1.hu.edu.jo" target="_blank"> <img src="../media/icons/footerLink.svg" alt=""> بوابة
+                الطالب</a></li>
+            <li><a href="https://hu.edu.jo" target="_blank"> <img src="../media/icons/footerLink.svg" alt=""> عمادة شؤون
+                الطلبة</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="box copyInner">
+      جميع الحقوق محفوظة <span>لـ الجامعة الهاشمية</span> 2025
+    </div>
+
+  </footer>
+  <!-- end footer -->
+
+</body>
+
+<script src="../js/darkmode.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/form.js"></script>
+
+</html>

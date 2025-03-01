@@ -979,6 +979,9 @@ header {
   text-align: right;
   color: #e70101;
   font-weight: 500;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .input input::-moz-placeholder, .input select::-moz-placeholder, .input textarea::-moz-placeholder {
   color: #e70101;
@@ -991,6 +994,7 @@ header {
   font-weight: 400;
 }
 .input textarea {
+  height: 90px;
   padding: 5px 15px 0 15px;
   resize: none;
 }
@@ -1202,7 +1206,7 @@ header {
   }
 }
 .w100 {
-  width: 100%;
+  width: 100% !important;
 }
 .w100 p {
   padding-bottom: 20px;
@@ -2010,6 +2014,7 @@ footer {
   flex-direction: column;
   background-color: #fff;
   border-radius: 20px;
+  align-items: flex-start;
 }
 .alert i {
   font-size: 2rem;
@@ -2029,6 +2034,9 @@ footer {
   padding-top: 20px;
   font-size: 1.2rem;
   font-weight: 500;
+}
+.alert button {
+  margin-top: 20px;
 }
 
 .cardscont {
@@ -2060,6 +2068,11 @@ footer {
   padding-bottom: 20px;
   text-align: center;
   width: 100%;
+}
+
+.cardscont2 .c {
+  width: 250px;
+  padding: 40px 20px;
 }
 
 .btn2 {
@@ -2124,4 +2137,127 @@ footer {
   margin: 0 auto;
   font-size: 1rem;
   margin-top: 30px;
+}
+
+.taIn {
+  width: 100%;
+  overflow: auto;
+}
+.taIn::-webkit-scrollbar {
+  height: 5px;
+}
+.taIn::-webkit-scrollbar-track {
+  background: #fff;
+}
+.taIn::-webkit-scrollbar-thumb {
+  background: #e70101;
+}
+
+.tg {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+.tg tbody {
+  font-size: 16px;
+}
+.tg tbody tr td {
+  height: 60px;
+  padding: 0 10px;
+  text-align: center !important;
+  vertical-align: middle !important;
+  background-color: #fff;
+  white-space: nowrap !important;
+  font-weight: 500;
+}
+.tg tbody tr td img {
+  vertical-align: middle !important;
+  width: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 42px;
+}
+.tg tbody tr td input {
+  width: 17px;
+  height: 17px;
+}
+.tg tbody tr td:first-child {
+  border-top-right-radius: 20px;
+  padding-right: 20px;
+}
+.tg tbody tr td:last-child {
+  border-top-left-radius: 20px;
+  padding-left: 20px;
+}
+.tg tbody tr td:first-child {
+  border-bottom-right-radius: 20px;
+}
+.tg tbody tr td:last-child {
+  border-bottom-left-radius: 20px;
+}
+.tg thead {
+  display: none;
+}
+
+.tg th {
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+.tg th input {
+  width: 17px;
+  height: 17px;
+}
+
+@media (max-width: 701px) {
+  .tg th {
+    padding: 10px 5px;
+  }
+}
+@media (max-width: 451px) {
+  .tg th {
+    font-size: 14px;
+  }
+  .tg tbody tr td {
+    font-size: 14px;
+  }
+}
+.tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.tools .a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #757a89;
+  font-size: 1.3em;
+}
+.tools .a i {
+  color: #757a89;
+}
+.tools i {
+  color: #757a89;
+}
+
+.mra {
+  margin-right: auto;
+}
+
+.pending {
+  color: #272727;
+}
+
+.rejected {
+  color: #820000;
+}
+
+.approved {
+  color: #008223;
 }/*# sourceMappingURL=style.css.map */

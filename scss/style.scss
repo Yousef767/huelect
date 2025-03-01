@@ -825,12 +825,14 @@ header {
     text-align: right;
     color: $main;
     font-weight: 500;
+    appearance: none;
     &::placeholder {
       color: $main;
       font-weight: 400;
     }
   }
   textarea {
+    height: 90px;
     padding: 5px 15px 0 15px;
     resize: none;
   }
@@ -1059,7 +1061,7 @@ header {
   }
 }
 .w100 {
-  width: 100%;
+  width: 100% !important;
   p {
     padding-bottom: 20px;
   }
@@ -1805,7 +1807,8 @@ footer {
   flex-direction: column;
   background-color: #fff;
   border-radius: 20px;
-  i{
+  align-items: flex-start;
+  i {
     font-size: 2rem;
     color: $main;
   }
@@ -1823,6 +1826,9 @@ footer {
     padding-top: 20px;
     font-size: 1.2rem;
     font-weight: 500;
+  }
+  button {
+    margin-top: 20px;
   }
 }
 .cardscont {
@@ -1848,6 +1854,12 @@ footer {
     padding-bottom: 20px;
     text-align: center;
     width: 100%;
+  }
+}
+.cardscont2 {
+  .c {
+    width: 250px;
+    padding: 40px 20px;
   }
 }
 .btn2 {
@@ -1888,25 +1900,138 @@ footer {
   }
 }
 
-.c2{
+.c2 {
   width: 270px;
   padding: 30px;
   flex-grow: 0;
-  img{
+  img {
     width: 150px;
     height: 150px;
     border-radius: 15px;
     border: 1px solid $main;
     object-fit: cover;
   }
-  h3{
+  h3 {
     padding-top: 20px;
   }
 }
-.submitBtn{
+.submitBtn {
   width: fit-content;
   height: 45px;
   margin: 0 auto;
   font-size: 1rem;
   margin-top: 30px;
+}
+.taIn {
+  width: 100%;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    height: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $main;
+  }
+}
+.tg {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  tbody {
+    font-size: 16px;
+    tr {
+      td {
+        height: 60px;
+        padding: 0 10px;
+        text-align: center !important;
+        vertical-align: middle !important;
+        background-color: #fff;
+        white-space: nowrap !important;
+        font-weight: 500;
+        img {
+          vertical-align: middle !important;
+          width: 70px;
+          object-fit: contain;
+          max-height: 42px;
+        }
+        input {
+          width: 17px;
+          height: 17px;
+        }
+      }
+    }
+    tr td:first-child {
+      border-top-right-radius: 20px;
+      padding-right: 20px;
+    }
+    tr td:last-child {
+      border-top-left-radius: 20px;
+      padding-left: 20px;
+    }
+    tr td:first-child {
+      border-bottom-right-radius: 20px;
+    }
+    tr td:last-child {
+      border-bottom-left-radius: 20px;
+    }
+  }
+  thead {
+    display: none;
+  }
+}
+
+.tg th {
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  white-space: nowrap;
+  input {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media (max-width: 701px) {
+  .tg th {
+    padding: 10px 5px;
+  }
+}
+@media (max-width: 451px) {
+  .tg th {
+    font-size: 14px;
+  }
+  .tg tbody tr td {
+    font-size: 14px;
+  }
+}
+.tools {
+  @include flex();
+  gap: 10px;
+  .a {
+    @include flex();
+    color: #757a89;
+    font-size: 1.3em;
+    i {
+      color: #757a89;
+    }
+  }
+  i {
+    color: #757a89;
+  }
+}
+.mra {
+  margin-right: auto;
+}
+.pending{
+  color: #272727;
+}
+.rejected{
+color: #820000;
+}
+.approved{
+  color: #008223;
 }
