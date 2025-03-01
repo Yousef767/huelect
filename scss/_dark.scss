@@ -143,4 +143,11 @@ body.dark {
   .pending{
     color: #ccc;
   }
+  .input{
+    select{
+      option{
+        color: #fff;
+      }
+    }
+  }
 }

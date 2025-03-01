@@ -127,6 +127,9 @@ body.dark .tg .tools i {
 body.dark .pending {
   color: #ccc;
 }
+body.dark .input select option {
+  color: #fff;
+}
 
 * {
   margin: 0;
