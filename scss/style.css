@@ -2048,7 +2048,7 @@ footer {
   font-size: 1.2rem;
   font-weight: 500;
 }
-.alert button {
+.alert button, .alert a {
   margin-top: 20px;
 }
 
